@@ -4,7 +4,6 @@ import PySimpleGUI as sg
 
 def game():
     wanted = random.randint(0, 1000)
-    print(wanted)
     layout = [[sg.Text("Enter the number (0-1000):")], [sg.InputText()], [sg.Button("OK")]]
     window = sg.Window("Guess the number", layout, margins=(70, 40))
     changes = 1
